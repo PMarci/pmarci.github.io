@@ -1,15 +1,16 @@
+/*html {
+  background: url(bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
 .parallax {
-  perspective: 1px;
+  perspective: 4px;
   height: 100%;
   width: 100vw;
   overflow-x: hidden;
   overflow-y: auto;
-}
-.parallax__group {
-  position: relative;
-  /*height: 100%;*/
-  transform-style: preserve-3d;
-  /*transform: translate3d(700px, 0, -10px) rotateY(0.1deg);*/
 }
 .parallax__layer {
   position: absolute;
@@ -19,20 +20,25 @@
   left: 0;
 }
 .parallax__layer--base {
-  transform: translateZ(0);
+  transform: translateZ(0px);
 }
 .parallax__layer--back {
-  transform: translateZ(-3px) scale(4);
-  /*height: 50%; /* Now the background is only 50% height */
-  transform-origin: 50% 26%;
-  padding-bottom: 50%;
-  float:left;
+  transform: translateZ(-3px) scale(1.98, 2);
   background:url('bg.jpg') no-repeat center top;
-  background-size: 100%;
-  width: 100%;
-  min-width: 840;
-  min-height: 1132;
-
+/*  -webkit-background-size: cover;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 234%;
+  width: 1000px;
+  height: 3000px; */
+  height: 100%;
+  min-width: 850;
+  min-height: 1360;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: 100%;
+  	background-position: 0 239;
+		position:absolute;
 }
 #page-wrap {
     width: 400px;
@@ -43,8 +49,9 @@
     -webkit-box-shadow: 0 0 20px black;
     box-shadow: 0 0 20px black;
 }
-html,body {
+body {
   margin: 0;
+  width: auto;
 }
 h1 {
   color: rgba(0,0,0,.8);
