@@ -2,7 +2,9 @@
   <head>
     <link rel="stylesheet" type="text/css" href="hello.css">
   </head>
-
+  <div class="debug">
+    <label><input type="checkbox"> Debug</label>
+  </div>
   <div class="parallax">
     <div class="parallax__group">
       <body>
@@ -23,6 +25,11 @@
 
           <p>Perfect.</p>
 
+          <p>Etiam sagittis enim vel sem egestas imperdiet. Duis non lobortis nisl. Nam vitae gravida orci. Nulla dictum nunc at augue semper consequat sit amet quis eros. Fusce rutrum sapien non sollicitudin mollis. Aliquam eu tincidunt neque, iaculis hendrerit urna. Phasellus odio dolor, ultricies ultricies laoreet nec, suscipit eu nunc. Donec aliquam fringilla justo, eget elementum lectus tincidunt nec.</p>
+          <p>Etiam sagittis enim vel sem egestas imperdiet. Duis non lobortis nisl. Nam vitae gravida orci. Nulla dictum nunc at augue semper consequat sit amet quis eros. Fusce rutrum sapien non sollicitudin mollis. Aliquam eu tincidunt neque, iaculis hendrerit urna. Phasellus odio dolor, ultricies ultricies laoreet nec, suscipit eu nunc. Donec aliquam fringilla justo, eget elementum lectus tincidunt nec.</p>
+          <p>Etiam sagittis enim vel sem egestas imperdiet. Duis non lobortis nisl. Nam vitae gravida orci. Nulla dictum nunc at augue semper consequat sit amet quis eros. Fusce rutrum sapien non sollicitudin mollis. Aliquam eu tincidunt neque, iaculis hendrerit urna. Phasellus odio dolor, ultricies ultricies laoreet nec, suscipit eu nunc. Donec aliquam fringilla justo, eget elementum lectus tincidunt nec.</p>
+          <p>Etiam sagittis enim vel sem egestas imperdiet. Duis non lobortis nisl. Nam vitae gravida orci. Nulla dictum nunc at augue semper consequat sit amet quis eros. Fusce rutrum sapien non sollicitudin mollis. Aliquam eu tincidunt neque, iaculis hendrerit urna. Phasellus odio dolor, ultricies ultricies laoreet nec, suscipit eu nunc. Donec aliquam fringilla justo, eget elementum lectus tincidunt nec.</p>
+          <p>Etiam sagittis enim vel sem egestas imperdiet. Duis non lobortis nisl. Nam vitae gravida orci. Nulla dictum nunc at augue semper consequat sit amet quis eros. Fusce rutrum sapien non sollicitudin mollis. Aliquam eu tincidunt neque, iaculis hendrerit urna. Phasellus odio dolor, ultricies ultricies laoreet nec, suscipit eu nunc. Donec aliquam fringilla justo, eget elementum lectus tincidunt nec.</p>
         </article>
 
       </div>
@@ -30,5 +37,12 @@
     </body>
     </div>
   </div>
-
+  <script>
+    var debugInput = document.querySelector("input");
+    function updateDebugState() {
+        document.body.classList.toggle('debug-on', debugInput.checked);
+    }
+    debugInput.addEventListener("click", updateDebugState);
+    updateDebugState();
+  </script>
 </html>
