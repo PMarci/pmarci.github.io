@@ -1,0 +1,9 @@
+"3.16.0 (created: 2017/02/01 00:55:15)
+" vim: set ft=vimperator:
+
+source! "C:\Users\posam\_vimperatorrc.local"
+
+inoremap <C-a> <Insert><C-a><Insert>
+noremap <C-a> i<C-a>
+noremap <C-Tab> i<C-Tab>
+noremap x <C-^>
